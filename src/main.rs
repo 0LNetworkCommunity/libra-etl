@@ -1,3 +1,5 @@
+
+use libra_etl::cli::EtlCli;
 fn main() {
-    println!("Hello, world!");
+  EtlCli::parse().run();
 }
