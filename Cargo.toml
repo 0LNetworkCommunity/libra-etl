@@ -1,0 +1,9 @@
+[package]
+name = "libra-etl"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "=1.0.81"
+diem-json-rpc = { git = "https://github.com/0LNetworkCommunity/libra-legacy-v6", branch = "release-v5.2.0" }
+serde_json = { version = "=1.0.114"}
