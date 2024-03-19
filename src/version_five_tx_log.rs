@@ -12,9 +12,13 @@ fn load_tx_json(path: &Path) -> anyhow::Result<()> {
     Ok(())
 }
 
-#[test]
-fn test_parse_manifest() {
+pub(crate) fn debug_parse_manifest() {
     let this_path = Path::new(env!("CARGO_MANIFEST_DIR"));
     let this_path = this_path.join("fixtures/v5_sample_tx_log.json");
     load_tx_json(&this_path).expect("parse json");
+}
+
+#[test]
+fn test_parse_manifest() {
+  debug_parse_manifest()
 }

@@ -1,6 +1,8 @@
 
 use clap::Parser;
 
+use crate::version_five_tx_log;
+
 #[derive(Parser)]
 #[clap(name = env!("CARGO_PKG_NAME"), author, version, about, long_about = None, arg_required_else_help = true)]
 /// Process backup files
@@ -36,6 +38,6 @@ pub struct V5Opts {
 
 impl V5Opts {
   pub fn run(&self) {
-    println!("hello world");
+    version_five_tx_log::debug_parse_manifest()
   }
 }
