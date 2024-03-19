@@ -1,5 +1,7 @@
 
 use libra_etl::cli::EtlCli;
-fn main() {
-  EtlCli::parse().run();
+use clap::Parser;
+
+fn main() -> anyhow::Result<()>{
+  EtlCli::parse().run()
 }

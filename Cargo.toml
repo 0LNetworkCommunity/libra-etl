@@ -5,6 +5,6 @@ edition = "2021"
 
 [dependencies]
 anyhow = "=1.0.81"
-clap = { version = "4.3.5", features = ["derive"] }
+clap = { version = "4.3.5", features = ["derive", "unstable-styles"] }
 diem-json-rpc = { git = "https://github.com/0LNetworkCommunity/libra-legacy-v6", branch = "release-v5.2.0" }
 serde_json = { version = "=1.0.114"}

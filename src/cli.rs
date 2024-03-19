@@ -3,7 +3,7 @@ use clap::Parser;
 
 #[derive(Parser)]
 #[clap(name = env!("CARGO_PKG_NAME"), author, version, about, long_about = None, arg_required_else_help = true)]
-/// Submit a transaction to the blockchain.
+/// Process backup files
 pub struct EtlCli {
     #[clap(subcommand)]
     pub subcommand: Option<EtlSubcommands>,
